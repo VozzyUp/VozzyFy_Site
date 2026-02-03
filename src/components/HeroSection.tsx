@@ -45,13 +45,17 @@ const HeroSection = () => {
           
           {/* CTA buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button variant="hero" size="xl" className="w-full sm:w-auto">
-              Quero minha plataforma
-              <ArrowRight className="w-5 h-5" />
+            <Button variant="hero" size="xl" className="w-full sm:w-auto" asChild>
+              <a href="https://vozfy.cloud/checkout?p=01da9a723a21a046b6cfbe1cdea85081" target="_blank" rel="noopener noreferrer">
+                Quero minha plataforma
+                <ArrowRight className="w-5 h-5" />
+              </a>
             </Button>
-            <Button variant="heroOutline" size="xl" className="w-full sm:w-auto">
-              <Play className="w-5 h-5" />
-              Ver funcionalidades
+            <Button variant="heroOutline" size="xl" className="w-full sm:w-auto" asChild>
+              <a href="#funcionalidades">
+                <Play className="w-5 h-5" />
+                Ver funcionalidades
+              </a>
             </Button>
           </div>
         </div>
