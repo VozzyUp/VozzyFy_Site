@@ -14,7 +14,7 @@ const Header = () => {
       
       {/* Main header */}
       <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between text-secondary-foreground">
           <div className="flex items-center gap-3">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-emerald-400 flex items-center justify-center">
