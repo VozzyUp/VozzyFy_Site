@@ -79,14 +79,18 @@ const PricingSection = () => {
             </ul>
 
             {/* CTA */}
-            <Button variant="hero" size="xl" className="w-full mb-4">
-              Garantir minha plataforma agora
-              <ArrowRight className="w-5 h-5" />
+            <Button variant="hero" size="xl" className="w-full mb-4" asChild>
+              <a href="https://vozfy.cloud/checkout?p=01da9a723a21a046b6cfbe1cdea85081" target="_blank" rel="noopener noreferrer">
+                Garantir minha plataforma agora
+                <ArrowRight className="w-5 h-5" />
+              </a>
             </Button>
             
-            <Button variant="heroOutline" size="lg" className="w-full">
-              <Play className="w-4 h-4" />
-              Ver demonstração
+            <Button variant="heroOutline" size="lg" className="w-full" asChild>
+              <a href="https://demo.vozfy.cloud" target="_blank" rel="noopener noreferrer">
+                <Play className="w-4 h-4" />
+                Ver demonstração
+              </a>
             </Button>
 
             {/* Trust text */}
