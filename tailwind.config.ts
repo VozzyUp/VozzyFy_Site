@@ -57,6 +57,13 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        emerald: {
+          400: "#34d399",
+          500: "#10b981",
+        },
+        yellow: {
+          500: "#eab308",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
