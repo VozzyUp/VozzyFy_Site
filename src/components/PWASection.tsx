@@ -1,16 +1,7 @@
 import { Bell, Smartphone, Zap, CheckCircle } from "lucide-react";
-
 const PWASection = () => {
-  const features = [
-    "Notificações push em tempo real",
-    "Novo PIX gerado",
-    "Pedido aprovado",
-    "Disparos automáticos",
-    "Instalação como app nativo",
-  ];
-
-  return (
-    <section className="section-padding">
+  const features = ["Notificações push em tempo real", "Novo PIX gerado", "Pedido aprovado", "Disparos automáticos", "Instalação como app nativo"];
+  return <section className="section-padding">
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
@@ -31,14 +22,12 @@ const PWASection = () => {
             </p>
             
             <ul className="space-y-3">
-              {features.map((feature, i) => (
-                <li key={i} className="flex items-center gap-3">
+              {features.map((feature, i) => <li key={i} className="flex items-center gap-3">
                   <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
                     <CheckCircle className="w-4 h-4 text-primary" />
                   </div>
                   <span className="text-foreground">{feature}</span>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
           
@@ -65,7 +54,7 @@ const PWASection = () => {
                       </div>
                       <div className="flex-1">
                         <div className="flex items-center gap-2">
-                          <span className="text-xs font-medium text-foreground">Getfy Pedido</span>
+                          <span className="text-xs font-medium text-foreground">VozzyFy Pedido</span>
                           <span className="text-xs text-muted-foreground">há 6m</span>
                         </div>
                         <span className="text-xs text-primary font-medium">Aprovado!</span>
@@ -84,7 +73,7 @@ const PWASection = () => {
                       </div>
                       <div className="flex-1">
                         <div className="flex items-center gap-2">
-                          <span className="text-xs font-medium text-foreground">Getfy Pix Gerado</span>
+                          <span className="text-xs font-medium text-foreground">VozzyFy Pix Gerado</span>
                           <span className="text-xs text-muted-foreground">há 9m</span>
                         </div>
                         <span className="text-xs text-yellow-500 font-medium">Aguardando...</span>
@@ -103,8 +92,6 @@ const PWASection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default PWASection;
